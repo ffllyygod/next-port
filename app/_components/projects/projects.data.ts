@@ -4,63 +4,37 @@ export interface Project {
   description: string;
   tags: string[];
   github: string;
+  live?: string;
 }
 
 export const projects: Project[] = [
   {
-    title: "Conflux",
+    title: "Fast React Pizza",
     description:
-      "Modular, actor-based real-time collaboration engine written in Rust. Provides CRDT sync, presence awareness, and WebSocket-based chat with JWT auth.",
-    tags: ["Rust", "CRDT", "WebSockets", "JWT Auth", "Yrs", "Tokio"],
-    github: "https://github.com/Kayleexx/conflux",
+      "Pizza ordering web application focused on speed and simplicity. Users place orders without accounts, enter their name once, and select pizzas from a dynamic menu loaded via API. Built for clean UX and fast interactions.",
+    tags: ["React", "API", "State Management", "UX"],
+    github: "https://github.com/ffllyygod/Fast-React-Pizza-Co.",
+    live: "https://ffllyy-pizza.netlify.app/",
   },
   {
-    title: "Veridian",
+    title: "ETL Tool",
     description:
-      "Git-like version control system in Rust. Implements repo init, object storage, trees, and commits to explore Git internals.",
-    tags: ["Rust", "Git Internals", "Content-addressable storage", "CLI"],
-    github: "https://github.com/Kayleexx/veridian",
+      "Data Analytics as a Service platform that extracts data from multiple local and cloud sources in different formats. Built using a microservice architecture and deployed on AWS.",
+    tags: ["React", "Flask", "ETL", "Docker", "AWS", "Microservices"],
+    github: "https://github.com/ffllyygod/ETL_Tool",
   },
   {
-    title: "Veil",
+    title: "WorldWise",
     description:
-      "Multi-purpose encryption and secret-sharing framework with AES, Shamir’s Secret Sharing, and basic MPC.",
-    tags: ["Rust", "AES", "Shamir", "MPC", "CLI"],
-    github: "https://github.com/Kayleexx/veil",
+      "Interactive travel tracking web app that allows users to log and visualize places they’ve visited. Built to showcase routing, React Context API, and map-based UI using Leaflet.",
+    tags: ["React", "Context API", "Routing", "Leaflet", "Maps"],
+    github: "https://github.com/ffllyygod/World-Wise",
   },
   {
-    title: "Nexus",
+    title: "Free Udemy Courses Archive",
     description:
-      "Rust CLI tool that scans codebases to generate file-level dependency graphs and detect circular dependencies.",
-    tags: ["Rust", "Clap", "Graph analysis", "petgraph"],
-    github: "https://github.com/Kayleexx/Nexus",
-  },
-  {
-    title: "VitalCheck",
-    description:
-      "Multi-agent health consultant built for a bounty. Handles complex health query flows with modular agents.",
-    tags: ["Python", "dataclasses", "logging", "CLI"],
-    github: "https://github.com/Kayleexx/VitalCheck",
-  },
-  {
-    title: "WebWalker",
-    description:
-      "Blazing-fast async web crawler with recursion, rate limiting, and domain scoping.",
-    tags: ["Rust", "Tokio", "Reqwest", "Scraper", "Serde"],
-    github: "https://github.com/Kayleexx/webwalker",
-  },
-  {
-    title: "AquaMint",
-    description:
-      "DEX tool to create ERC-20 pairs and launch liquidity pools on a Uniswap-style exchange (testnet).",
-    tags: ["Solidity", "Ethers.js", "React", "TypeScript"],
-    github: "https://github.com/Kayleexx/aquamint-dex",
-  },
-  {
-    title: "CryptoFusion",
-    description:
-      "Real-time crypto dashboard showing token prices, market trends, and news via public APIs.",
-    tags: ["React", "Redux", "Chart.js", "APIs"],
-    github: "https://github.com/Kayleexx/CryptoFusion",
+      "Curated archive of DevOps, MERN, Next.js, React, and security-related learning resources distributed via torrent files for offline access.",
+    tags: ["DevOps", "MERN", "Next.js", "React", "Security"],
+    github: "https://github.com/ffllyygod/Free-Udemy-Courses",
   },
 ];

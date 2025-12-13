@@ -21,15 +21,29 @@ export default function ProjectCard({
           {project.title}
         </h3>
 
-        <a
-          href={project.github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="project-icon text-gray-400 transition-colors duration-300"
-          aria-label={`${project.title} GitHub`}
-        >
-          <Github size={20} />
-        </a>
+        <div className="flex items-center gap-3">
+          {project.live && (
+            <a
+              href={project.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-icon text-gray-400 hover:text-purple-400 transition-colors duration-300"
+              aria-label={`${project.title} Live Demo`}
+            >
+              <ExternalLink size={20} />
+            </a>
+          )}
+
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-icon text-gray-400 hover:text-purple-400 transition-colors duration-300"
+            aria-label={`${project.title} GitHub`}
+          >
+            <Github size={20} />
+          </a>
+        </div>
       </div>
 
       {/* Description */}
@@ -50,17 +64,26 @@ export default function ProjectCard({
       </div>
 
       {/* Footer */}
-      <div className="pt-4 border-t border-white/10">
+      <div className="pt-4 border-t border-white/10 flex items-center gap-4">
+        {project.live && (
+          <a
+            href={project.live}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-purple-400 transition-colors duration-300"
+          >
+            <ExternalLink size={16} />
+            <span>live demo</span>
+          </a>
+        )}
+
         <a
           href={project.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors duration-300"
+          className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-purple-400 transition-colors duration-300"
         >
-          <ExternalLink
-            size={16}
-            className="project-link-icon transition-transform duration-300"
-          />
+          <Github size={16} />
           <span>view source</span>
         </a>
       </div>
