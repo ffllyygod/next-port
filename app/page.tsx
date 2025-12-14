@@ -14,7 +14,7 @@ export default function Hero() {
 
                         <div className="space-y-6">
                             <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-tight text-balance hover:text-gray-300 transition-colors duration-300">
-                                ffllyy stopped sippin started shiping
+                                ffllyy stopped sippin started shipping
                             </h1>
 
                             <h2 className="text-md md:text-lg lg:text-xl text-gray-300 text-balance">
