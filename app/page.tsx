@@ -20,16 +20,20 @@ export default function Hero() {
                             <h2 className="text-md md:text-lg lg:text-xl text-gray-300 text-balance">
 
 
-                                <TypingText
-                                    text="// codeine refugee turned coding enjoyer"
-                                    speed={40}
-                                />
+                                <h2 className="text-md md:text-lg lg:text-xl text-gray-300 text-balance">
+                                    <TypingText
+                                        text="// shipping products end-to-end, no handoffs"
+                                        speed={40}
+                                    />
+                                </h2>
+
+
 
                             </h2>
 
                             <div className="text-sm md:text-md text-purple-400 text-pretty">
                                 <TypingText
-                                    text="status: damn I missin the act"
+                                    text="status: owning frontend, backend, and the mess between"
                                     speed={35}
                                 />
                             </div>
