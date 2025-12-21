@@ -17,9 +17,7 @@ export default function Hero() {
                                 ffllyy stopped sippin started shipping
                             </h1>
 
-                            <h2 className="text-md md:text-lg lg:text-xl text-gray-300 text-balance">
-
-
+                           
                                 <h2 className="text-md md:text-lg lg:text-xl text-gray-300 text-balance">
                                     <TypingText
                                         text="// shipping products end-to-end, no handoffs"
@@ -27,9 +25,6 @@ export default function Hero() {
                                     />
                                 </h2>
 
-
-
-                            </h2>
 
                             <div className="text-sm md:text-md text-purple-400 text-pretty">
                                 <TypingText
@@ -40,21 +35,23 @@ export default function Hero() {
                         </div>
 
                         {/* CTA */}
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
-                            <a
-                                href="/projects/"
-                                className="px-8 py-3 border border-white text-white hover:bg-white hover:text-black transition-all duration-300 rounded hover:scale-105"
-                            >
-                                view projects
+
+                        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-14">
+                            <a href="/projects">
+                                <button className="btn-3d">
+                                    <div className="btn-3d-top">view projects</div>
+                                    <div className="btn-3d-bottom" />
+                                </button>
                             </a>
 
-                            <a
-                                href="/contact/"
-                                className="px-8 py-3 bg-white text-black hover:bg-gray-200 transition-all duration-300 rounded hover:scale-105"
-                            >
-                                get in touch
+                            <a href="/contact">
+                                <button className="btn-3d">
+                                    <div className="btn-3d-top">touch me</div>
+                                    <div className="btn-3d-bottom" />
+                                </button>
                             </a>
                         </div>
+
 
                     </div>
                 </section>

@@ -474,3 +474,95 @@ a { text-decoration: none; }
   font-size: .7rem;
   color: #6b7280;
 }
+
+
+/* ================================
+   3D CTA BUTTON (Hero)
+   ================================ */
+
+.btn-3d {
+  position: relative;
+  width: 170px;
+  height: 56px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.btn-3d-top {
+  width: 100%;
+  height: 100%;
+  background: #0a0a0a;
+  color: #e5e7eb;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 999px;
+  border: 1px solid rgba(168, 85, 247, 0.6);
+  position: relative;
+  overflow: hidden;
+
+  transform: translateY(0);
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.btn-3d-bottom {
+  position: absolute;
+  inset: 0;
+  background: rgba(168, 85, 247, 0.25);
+  border-radius: 14px;
+  transform: translateY(10px);
+  z-index: -1;
+  border-radius: 999px;
+
+}
+
+.btn-3d::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: rgba(168, 85, 247, 0.35);
+  border-radius: 14px;
+  transform: translateY(14px);
+  z-index: -2;
+  border-radius: 999px;
+
+}
+
+/* press */
+.btn-3d:active .btn-3d-top {
+  transform: translateY(10px);
+}
+
+/* sheen */
+.btn-3d-top::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(168, 85, 247, 0.35),
+    transparent
+  );
+  transform: skewX(25deg);
+  left: -30px;
+  transition: left 0.3s ease;
+}
+
+.btn-3d:hover .btn-3d-top::before {
+  left: calc(100% + 30px);
+}
+
+/* hover glow */
+.btn-3d:hover .btn-3d-top {
+  color: white;
+  box-shadow: 0 0 22px rgba(168, 85, 247, 0.45);
+}
