@@ -21,9 +21,9 @@ export default function ContactPage() {
           <ContactStatus />
 
           <div className="text-center mt-16">
-            <p className="text-gray-500 text-sm">
+            {/* <p className="text-gray-500 text-sm">
               // let’s turn codeine into coding together
-            </p>
+            </p> */}
             <p className="text-xs text-gray-600 mt-2 font-mono">
               {"if (message.isInteresting()) { response.send_immediately(); }"}
             </p>
