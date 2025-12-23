@@ -18,7 +18,7 @@ export const experiences: Experience[] = [
     company: "Ingenious e-Brain",
     role: "Software Development Engineer – Full Stack",
     location: "Gurugram, India",
-    duration: "Aug 2024 – Present",
+    duration: "Aug 2024 – Nov 2024",
     current: true,
     type: "work",
     description: [
